@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -5,6 +9,7 @@ body {
 h1 {
   font-weight: normal;
   font-size: 30px;
+  padding-top: 30px;
 }
 
 .code {
@@ -17,8 +22,33 @@ h1 {
   border-radius: 5px;
 }
 
-@media (max-width: 100px) {
-  body {
-    background-color: rgb(50, 50, 230);
+#navbar {
+  display: inline;
+  float: left;
+  z-index: 1 /* stay on top */
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  border-top: 1px solid black;
+  padding: 10px 0;
+}
+
+.nav-link:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+.nav-link:hover {
+  background-color: rgb(185, 185, 185);
+}
+
+/* Applies if window is over 769px and under 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #navbar h1 {
+    font-size: 1.5em;
   }
 }
