@@ -22,20 +22,30 @@ h1 {
   border-radius: 5px;
 }
 
-#navbar {
-  display: inline;
+#main-doc {
   float: left;
-  z-index: 1 /* stay on top */
-  width: 200px;
-  margin: 0;
+  width: 500px;
+  display: inline;
+}
+
+#navbar {
+  display: grid;
+  float: left;
+  z-index: 1; /* stay on top */
+  width: 175px;
+  margin-right: 30px;
   padding: 0;
 }
 
 .nav-link {
+  box-sizing: border-box;
   color: black;
   text-decoration: none;
   border-top: 1px solid black;
-  padding: 10px 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
 }
 
 .nav-link:last-of-type {
