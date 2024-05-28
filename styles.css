@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,17 +15,30 @@ h1 {
 
 .code {
   font-family: SF Mono, Menlo, Monaco, monospace;
-  line-height: 0.4em;
-  background-color: #e3e3e3;
+  background-color: #e9e9e9;
   width: 90%;
   margin: 0 auto;
-  padding: 1px 10px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: hidden;
+  display: grid;
+}
+
+.green {
+  color: rgb(0, 138, 46);
+}
+
+.red {
+  color: rgb(200, 0, 0);
+}
+
+.bold {
+  font-weight: bold;
 }
 
 #main-doc {
   float: left;
-  width: 500px;
+  width: 80%;
   display: inline;
 }
 
@@ -56,9 +70,15 @@ h1 {
   background-color: rgb(185, 185, 185);
 }
 
-/* Applies if window is over 769px and under 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-  #navbar h1 {
-    font-size: 1.5em;
+/* Applies if window is over 769px */
+@media (min-width: 469px) {
+  #main-doc {
+    width: 40%;
+  }
+}
+
+@media (min-width: 769px) {
+  #main-doc {
+    width: 60%;
   }
 }

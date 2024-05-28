@@ -18,6 +18,7 @@
       <a class="nav-link" href="#variables">3. Variables</a>
       <a class="nav-link" href="#if-statements">4. If-statements</a>
       <a class="nav-link" href="#for-and-while-loops">5. For & While loops</a>
+      <a class="nav-link" href="#functions">6. Functions</a>
     </nav>
     <main id="main-doc">
       <section id="introduction" class="main-section">
@@ -60,15 +61,60 @@
       </section>
       <section id="variables" class="main-section">
         <header><h1>3. Variables</h1></header>
+        <p>One of the most powerful features of Python is the ability to create and manipulate variables. For example, let's create a variable called x. Then, let's do some arithmetic on x.</p>
+        <div class="code">
+          <p>>>> x = 5</p>
+          <p>>>> x + 3</p>
+          <p>8</p>
+        </div>
+        <p>As you can see, Python stores the value 5 under the name x.</p>
+        <p>There are many data types you can set a variable to: ints, floats, <a href="https://www.w3schools.com/python/python_booleans.asp">Booleans</a> (True or False), and strings.</p>
       </section>
       <section id="if-statements" class="main-section">
-        <h1>4. If-statements</h1>
+        <header><h1>4. If-statements</h1></header>
+        <p>If-statements tell your code to run only under certain circumstances.</p>
+        <div class="code">
+          <code>>>> <span class="green bold">if</span>  x > 3:</code>
+          <code>... &nbsp; print("Hello world")</code>
+          <code>>>> <span class="green bold">else</span> :</code>
+          <code>>>> ... &nbsp; print("Bananas")</code>
+          <code>Hello world</code>
+        </div>
+        <p>If-statement syntax: </p>
+        <div class="code">
+          <code><span class="green bold">if</span>  [condition]:</code>
+          <code> &nbsp; [code]</code>
+          <code><span class="green bold">elif</span>  [condition]:</code>
+          <code> &nbsp; [code]</code>
+          <code><span class="green bold">else</span>:</code>
+          <code> &nbsp; [code]</code>
+        </div>
+        
+        <!--
+          <div class="code">
+          <p><span class="green bold">if</span> [condition]:</p>
+          <p>&nbsp; [code]</p>
+          <p><span class="green bold">elif</span> [condition]:</p>
+          <p>&nbsp; [code]</p>
+          <p><span class="green bold">else</span>:</p>
+        </div>
+        -->
+        <p>Elif, which stands for else-if, tells Python what code to run if the first <span class="green bold">if</span> condition is False.</p>
+        <p>Python will check the boolean conditions (also known as "clauses") like so:</p>
+        <ol>
+          <li>Check if <span class="green bold">if</span> condition is true</li>
+          <li>If the <span class="green bold">if</span> condition is <span class="green">true</span>, run that code block and skip all the other elifs and the else clause.</li>
+          <li>If the <span class="green bold">if</span> condition is <span class="red">false</span>, check the <span class="green bold">elif</span> condition.</li>
+        </ol>
       </section>
       <section id="for-and-while-loops" class="main-section">
-        <h1>5. For & While loops</h1>
+        <header><h1>5. For & While loops</h1></header>
       </section>
       <section id="functions" class="main-section">
-        <h1>6. Functions</h1>
+        <header><h1>6. Functions</h1></header>
+        <p>Functions ...</p>
+        <h3>Built-in</h3>
+        <h3>User-Defined</h3>
       </section>
     </main>
   </body>
