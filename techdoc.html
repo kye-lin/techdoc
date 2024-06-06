@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav id="navbar">
-      <header><h1>Python</h1></header>
+      <header><h1 id="python-header">Python</h1></header>
       <a class="nav-link" href="#introduction">Introduction</a>
       <a class="nav-link" href="why-learn-python">Why learn Python?</a>
       <a class="nav-link" href="#install-python">Install Python</a>
@@ -18,7 +18,6 @@
       <a class="nav-link" href="#variables">3. Variables</a>
       <a class="nav-link" href="#if-statements">4. If-statements</a>
       <a class="nav-link" href="#for-and-while-loops">5. For & While loops</a>
-      <a class="nav-link" href="#functions">6. Functions</a>
     </nav>
 
     <main id="main-doc">
@@ -53,12 +52,16 @@
         <p>If you type a number and press Enter, Python will return that number.</p>
         <div class="code">
           <code>>>> 2</code>
-          <code>2</code>
+        </div>
+        <div class="output">
+          <p>2</p>
         </div>
         <p>If you give it an expression, Python will return the result of computing that expression.</p>
         <div class="code">
           <code>>>> 5 * 3</code>
-          <code>15</code>
+        </div>
+        <div class="output">
+          <p>15</p>
         </div>
       </section>
       <section id="variables" class="main-section">
@@ -67,7 +70,9 @@
         <div class="code">
           <code>>>> x = 5</code>
           <code>>>> x + 3</code>
-          <code>8</code>
+        </div>
+        <div class="output">
+          <p>8</p>
         </div>
         <p>As you can see, Python stores the value 5 under the name x.</p>
         <p>There are many data types you can set a variable to: ints, floats, <a href="https://www.w3schools.com/python/python_booleans.asp">Booleans</a> (True or False), and strings.</p>
@@ -80,7 +85,9 @@
           <code>... &emsp; print("Hello world")</code>
           <code>>>> <span class="green bold">else</span> :</code>
           <code>>>> ... &emsp; print("Bananas")</code>
-          <code>Hello world</code>
+        </div>
+        <div class="output">
+          <p>Hello world</p>
         </div>
         <p>If-statement syntax: </p>
         <div class="code">
@@ -111,13 +118,31 @@
       </section>
       <section id="for-and-while-loops" class="main-section">
         <header><h1>5. For & While loops</h1></header>
+        <p>A great way to make code run multiple times without having to copy-and-paste your code over and over is to use a for loop or a while loop.</p>
+        <p>A <span class="bold">for loop</span> allows you to repeat code either (a) a certain number of times or (b) across a sequence (e.g. list, tuple, etc.).</p>
+        <p>The example below assigns x = 1, then x = 2, then x = 3, running the indented code block each time.</p>
+        <div class="code">
+          <code>for x in [1, 2, 3]: </code>
+          <code> &emsp; print(x)</code>
+        </div>
+        <div class="output">
+          <p class="output-code">1</p>
+          <p class="output-code">2</p>
+          <p class="output-code">3</p>
+        </div>
+        <p>A <span class="bold">while loop</span> also repeats code, but only when a condition is met.</p>
+        <div class="code">
+          <code>x = 3</code>
+          <code>while x < 5: </code>
+          <code> &emsp; print(x)</code>
+          <code> &emsp; x = x + 1  <span class="comment"># each time the while loop runs, x increases by 1</span></code>
+        </div>
+        <div class="output">
+          <p class="output-code">3</p>
+          <p class="output-code">4</p>
+        </div>
       </section>
-      <section id="functions" class="main-section">
-        <header><h1>6. Functions</h1></header>
-        <p>Functions ...</p>
-        <h3>Built-in</h3>
-        <h3>User-Defined</h3>
-      </section>
+      <div class="space"></div>
     </main>
   </body>
 </html>
